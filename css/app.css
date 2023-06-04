@@ -1,0 +1,100 @@
+@import 'bootstrap.min.css';
+
+/* Override style from bootstrap */
+
+html, body{
+    height: 100%;
+}
+
+#wrapper{
+  padding: 100px 0px 100px 225px;
+}
+
+.container{
+    padding: 50px;
+}
+
+.content{
+   padding: 30px;
+}
+
+#container{
+    min-height: calc(100vh - 170px);
+}
+
+.footer {
+    height: auto;
+    background: black;
+}
+
+.footer p {
+    margin: 0px;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.headline {
+    height: 500px;
+    width: 100%;
+    background: url('../img/flag.jpg') no-repeat center;
+    background-size: cover;
+}
+.headline1 {
+    height: 630px;
+    width: 100%;
+    background: url('../img/t3.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+}
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: 	#1995dc !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
